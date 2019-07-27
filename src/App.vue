@@ -9,6 +9,7 @@
 
     <p>ceshibianjiqiengbnebgtijiaoxinxi</p>
     <p>gangcaikancuole</p>
+    <p>lingyizhongfangfa</p>
 
     <nav class="mui-bar mui-bar-tab">
       <router-link class="mui-tab-item" to="/home">
