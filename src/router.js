@@ -7,6 +7,7 @@ import search from "./components/tabbar/Search.vue";
 
 var router = new VueRouter({
     routes: [
+        { path: "/", component: home },
         { path: "/home", component: home },
         { path: "/member", component: member },
         { path: "/shopping", component: shopping },

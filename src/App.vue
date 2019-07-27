@@ -32,16 +32,7 @@
 
 <script>
 export default {
-  data() {
-    return {};
-  },
-  created() {
-    this.geturl()
-  },
-  methods: {
-
-  }
-};
+}
 </script>
 
 <style lang="scss" scoped>

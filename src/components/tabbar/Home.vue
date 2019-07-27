@@ -1,9 +1,9 @@
 <template>
   <div>
     <mt-swipe :auto="4000">
-      <mt-swipe-item>1</mt-swipe-item>
-      <mt-swipe-item>2</mt-swipe-item>
-      <mt-swipe-item>3</mt-swipe-item>
+      <mt-swipe-item v-for="item in lunbotuList" :key="item.id">
+        <img :src="item.src" alt="">
+      </mt-swipe-item>
     </mt-swipe>
     <mt-button type="primary" size="normal">点击</mt-button>
   </div>
@@ -12,22 +12,24 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      lunbotuList: []
+    };
   },
   created() {
-    // this.getLunbotu();
+    this.getluobotu()
   },
   methods: {
-    // getLunbotu() {
-    //   this.$http
-    //     .get("http://vue.studyit.io/api/getnewslist")
-    //     .then(function(response) {
-    //       console.log(response);
-    //     })
-    //     .catch(function(error) {
-    //       console.log(`错误信息：${error}`);
-    //     });
-    // }
+    getluobotu() {
+      this.$axios
+        .get("./apiInterface/lunbo.json")
+        .then( res => {
+             this.lunbotuList = res.data.luoboobj 
+        })
+        .catch( err => {
+          console.log(err);
+        });
+    }
   }
 };
 </script>
@@ -35,5 +37,9 @@ export default {
 <style lang="scss" scoped>
 .mint-swipe {
   height: 200px;
+  img{
+    height: 100%;
+    width: 100%;
+  }
 }
 </style>
