@@ -8,6 +8,7 @@
     <router-view></router-view>
 
     <p>ceshibianjiqiengbnebgtijiaoxinxi</p>
+    <p>gangcaikancuole</p>
 
     <nav class="mui-bar mui-bar-tab">
       <router-link class="mui-tab-item" to="/home">
