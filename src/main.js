@@ -22,9 +22,8 @@ import "./lib/mui/css/icons-extra.css";
 
 // 引入 axios
 import axios from 'axios';
-axios.defaults.baseURL = "https://www.ifilm.ltd/api/";
 // 将axios绑定给vue成为一个属性
-Vue.prototype.$http = axios;
+Vue.prototype.$axios = axios;
 
 var vm = new Vue({
   el: "#app",

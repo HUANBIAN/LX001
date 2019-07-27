@@ -7,7 +7,6 @@
 
     <router-view></router-view>
 
-
     <nav class="mui-bar mui-bar-tab">
       <router-link class="mui-tab-item" to="/home">
         <span class="mui-icon mui-icon-home"></span>
@@ -19,7 +18,7 @@
       </router-link>
       <router-link class="mui-tab-item" to="/shopping">
         <span class="mui-icon mui-icon-extra mui-icon-extra-cart">
-            <span class="mui-badge">0</span>
+          <span class="mui-badge">0</span>
         </span>
         <span class="mui-tab-label">购物</span>
       </router-link>
@@ -32,14 +31,24 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {};
+  },
+  created() {
+    this.geturl()
+  },
+  methods: {
+
+  }
+};
 </script>
 
 <style lang="scss" scoped>
 .content {
   margin-top: 44px;
 }
-.mui-active{
+.mui-active {
   background-color: #999;
 }
 </style>
