@@ -7,6 +7,8 @@
 
     <router-view></router-view>
 
+    <p>ceshibianjiqiengbnebgtijiaoxinxi</p>
+
     <nav class="mui-bar mui-bar-tab">
       <router-link class="mui-tab-item" to="/home">
         <span class="mui-icon mui-icon-home"></span>
