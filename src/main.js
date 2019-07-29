@@ -17,17 +17,21 @@ import 'mint-ui/lib/style.css';
 Vue.use(MintUI);
 
 //导入mui
-import "./lib/mui/css/mui.min.css";
+import mui from"./lib/mui/css/mui.min.css";
 import "./lib/mui/css/icons-extra.css";
+// Vue.use(mui)
 
 // 引入 axios
 import axios from 'axios';
 // 将axios绑定给vue成为一个属性
 Vue.prototype.$axios = axios;
 
+import './css/index.scss'
+
 var vm = new Vue({
   el: "#app",
   render: c => c(app),
   router,
-  axios
+  axios,
+  mui
 })

@@ -5,7 +5,10 @@
       <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
     </header> -->
 
-    <router-view></router-view>
+    <transition>
+      <router-view></router-view>
+    </transition>
+
 
     <nav class="mui-bar mui-bar-tab">
       <router-link class="mui-tab-item" to="/home">
@@ -37,12 +40,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .content {
-//   margin-top: 44px;
-// }
+.content {
+  // margin-top: 44px;
+  overflow: hidden;
+}
 // .mui-active {
 //   background-color: #999;
 // }
+.v-enter{
+    opacity: 0;
+  transform: translateX(100%);
+}
+.v-leave-to{
+  opacity: 0;
+  transform: translateX(-100%);
+  position: absolute;
+}
+
+.v-enter-active,
+.v-leave-active{
+  transition: all 0.5s ease;
+}
 </style>
 
 
