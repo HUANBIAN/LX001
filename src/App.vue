@@ -1,9 +1,9 @@
 <template>
   <div class="content">
-    <header id="header" class="mui-bar mui-bar-nav">
+    <!-- <header id="header" class="mui-bar mui-bar-nav">
       <h1 class="mui-title">项目001</h1>
-      <!-- <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a> -->
-    </header>
+      <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    </header> -->
 
     <router-view></router-view>
 
@@ -18,7 +18,7 @@
       </router-link>
       <router-link class="mui-tab-item" to="/shopping">
         <span class="mui-icon mui-icon-extra mui-icon-extra-cart">
-          <span class="mui-badge">0</span>
+          <!-- <span class="mui-badge">0</span> -->
         </span>
         <span class="mui-tab-label">购物</span>
       </router-link>
@@ -32,16 +32,17 @@
 
 <script>
 export default {
+
 }
 </script>
 
 <style lang="scss" scoped>
-.content {
-  margin-top: 44px;
-}
-.mui-active {
-  background-color: #999;
-}
+// .content {
+//   margin-top: 44px;
+// }
+// .mui-active {
+//   background-color: #999;
+// }
 </style>
 
 
