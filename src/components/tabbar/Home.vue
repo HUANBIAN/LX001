@@ -12,10 +12,10 @@
         v-for="item in xinwentt"
         :key="item.id"
       >
-        <a href="#">
+        <router-link :to="item.to">
           <img :src="item.tubiaosrc" alt />
           <div class="mui-media-body">{{ item.biaoti }}</div>
-        </a>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -37,7 +37,7 @@ export default {
   methods: {
     getluobotu() {
       this.$axios
-        .get("./apiInterface/lunbo.json")
+        .get("lunbo.json")
         .then(res => {
           this.lunbotuList = res.data.luoboobj;
         })
@@ -47,7 +47,7 @@ export default {
     },
     getxinwentt() {
       this.$axios
-        .get("./apiInterface/xinwenliebiao.json")
+        .get("xinwenliebiao.json")
         .then(res => {
           this.xinwentt = res.data.xinwenliebiaobt;
         })
@@ -83,9 +83,8 @@ export default {
   .mui-table-view-cell {
     border: none;
   }
-  
 }
 .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
-    font-size: 14px;
+  font-size: 13px;
 }
 </style>

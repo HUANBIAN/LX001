@@ -43,6 +43,7 @@ export default {
 .content {
   // margin-top: 44px;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 // .mui-active {
 //   background-color: #999;

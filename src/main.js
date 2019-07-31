@@ -23,15 +23,24 @@ import "./lib/mui/css/icons-extra.css";
 
 // 引入 axios
 import axios from 'axios';
+axios.defaults.baseURL = './apiInterface';
 // 将axios绑定给vue成为一个属性
 Vue.prototype.$axios = axios;
 
+
+//导入时间格式化插件
+import moment from 'moment'
+
 import './css/index.scss'
+
+
+Vue.filter('dateFormat', function(datastr, pattern = "YYYY-MM-DD HH:mm:ss"){
+  return moment(datastr).format(pattern)
+})
 
 var vm = new Vue({
   el: "#app",
   render: c => c(app),
   router,
-  axios,
   mui
 })
