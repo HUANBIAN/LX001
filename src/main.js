@@ -17,9 +17,8 @@ import 'mint-ui/lib/style.css';
 Vue.use(MintUI);
 
 //导入mui
-import mui from"./lib/mui/css/mui.min.css";
+import "./lib/mui/css/mui.min.css";
 import "./lib/mui/css/icons-extra.css";
-// Vue.use(mui)
 
 // 引入 axios
 import axios from 'axios';
@@ -41,6 +40,5 @@ Vue.filter('dateFormat', function(datastr, pattern = "YYYY-MM-DD HH:mm:ss"){
 var vm = new Vue({
   el: "#app",
   render: c => c(app),
-  router,
-  mui
+  router
 })

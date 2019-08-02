@@ -5,9 +5,9 @@
     <h4>用户评论</h4>
     <hr />
     <div class="mui-input-row" style="margin: 10px 5px;">
-      <textarea id="textarea" rows="5" placeholder="最多吐槽120字" maxlength="120"></textarea>
+      <textarea id="textarea" rows="5" placeholder="最多吐槽120字" maxlength="120" v-model="tucao"></textarea>
     </div>
-    <button type="button" class="mui-btn mui-btn-primary mui-btn-block">发表评论</button>
+    <button type="button" class="mui-btn mui-btn-primary mui-btn-block" @click="fabiao">发表评论</button>
     <ul class="mui-table-view" v-for="item in pinglunneirong" :key="item.id">
       <li class="mui-table-view-cell">
         <p>
@@ -29,7 +29,9 @@ export default {
   data() {
     return {
       pinglunneirong: [],
-      pinglunneirongindex: 1
+      pinglunneirongindex: 1,
+      tucao: "",
+      id: 10
     };
   },
   created() {
@@ -41,16 +43,34 @@ export default {
         .get("pinglunneirong.json")
         .then(res => {
           this.pinglunneirong = res.data.neirong;
+          this.pinglunneirong.reverse();
         })
         .catch(err => {
           console.log(err);
         });
     },
-        xiaoxitishi() {
+    xiaoxitishi() {
       Toast({
         message: "没有更多了",
         duration: 1000
       });
+    },
+    fabiao() {
+      if (this.tucao.trim().length === 0) {
+        Toast({
+          message: "评论为空",
+          duration: 1000
+        })
+      } else{
+        this.id++
+        let zs = {
+          id: this.id,
+          yonghu: "用户1",
+          shijian: "Tue Jul 30 2019 23:36:50 GMT+0800 (中国标准时间)",
+          pinglun: this.tucao
+        }
+        this.pinglunneirong.unshift(zs)
+      }
     }
   }
 };
