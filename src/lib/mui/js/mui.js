@@ -14,6 +14,7 @@ var mui = (function(document, undefined) {
 	var tagSelectorRE = /^[\w-]+$/;
 	var translateRE = /translate(?:3d)?\((.+?)\)/;
 	var translateMatrixRE = /matrix(3d)?\((.+?)\)/;
+	
 
 	var $ = function(selector, context) {
 		context = context || document;
