@@ -2,16 +2,16 @@
   <div>
     <ul class="mui-table-view">
       <li class="mui-table-view-cell mui-media" v-for="item in newsListDetails" :key="item.id">
-        <a href="javascript:;">
+        <router-link :to="'/home/NewsDetail/'+ item.id">
           <img class="mui-media-object mui-pull-left" :src="item.touxiang" />
           <div class="mui-media-body">
             <h1>{{item.biaoti}}</h1>
             <p class="mui-ellipsis">
               <span>发表时间: {{item.fabiaoshijian | dateFormat}}</span>
-              <span>点击次数: {{item.dianjicishu}}}</span>
+              <span>点击次数: {{item.dianjicishu}}</span>
             </p>
           </div>
-        </a>
+        </router-link>
       </li>
     </ul>
   </div>

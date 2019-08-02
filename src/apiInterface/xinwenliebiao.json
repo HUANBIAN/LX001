@@ -4,37 +4,37 @@
             "id": 0,
             "biaoti":"新闻资讯",
             "tubiaosrc":"../images/menu1.png",
-            "to":"/Journalism"
+            "to":"/home/Journalism"
         },
         {
             "id": 1,
             "biaoti":"图片分享",
             "tubiaosrc":"../images/menu2.png",
-            "to":"/Journalism"
+            "to":"/home/Journalism"
         },
         {
             "id": 2,
             "biaoti":"商品购买",
             "tubiaosrc":"../images/menu3.png",
-            "to":"/Journalism"
+            "to":"/home/Journalism"
         },
         {
             "id": 3,
             "biaoti":"留言反馈",
             "tubiaosrc":"../images/menu4.png",
-            "to":"/Journalism"
+            "to":"/home/Journalism"
         },
         {
             "id": 4,
             "biaoti":"视频专区",
             "tubiaosrc":"../images/menu5.png",
-            "to":"/Journalism"
+            "to":"/home/Journalism"
         },
         {
             "id": 5,
             "biaoti":"联系我们",
             "tubiaosrc":"../images/menu6.png",
-            "to":"/Journalism"
+            "to":"/home/Journalism"
         }
     ]
 }
