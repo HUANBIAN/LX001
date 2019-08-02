@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>Title</title>
+	<style>
+	body ,div, h1, h3, p {
+		margin: 0;
+		padding: 0;
+	}
+
+	div {
+		float: left;
+/*		clear:both;*/
+		background-color: #ccc;
+		margin: 10px 5px;
+	}
+	h3 {
+		background-color: #333;
+		color: #fff;
+	}
+	h1, h3, p{
+		padding: 10px;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<h3>jQuery</h3>
+		<p>jQuery == $</p>
+	</div>
+
+	<div>
+		<h3>多库共存</h3>
+		<p>var xx = $.noConflict(); //让权</p>
+	</div>
+	
+	<div>
+		<h3>插件</h3>
+		<p>$.fn.xx = function(){} //原型</p>
+	</div>
+
+	<div>
+		<h3>DOM与$转换</h3>
+		<p>$(document选择器 //DOM ==> $</p>
+		<p>$("选择器")[0]/get[0] //$ ==> DOM 0为选取索引</p>
+	</div>
+	
+	<div>
+		<h3>选择器</h3>
+		<p>$("#id") //id选择器</p>
+		<p>$("div") //标签选择器</p>
+		<p>$(".class") //类样式选择器</p>
+		<p>$("选择器.类样式") //并集选择器</p>
+		<p>$("选择器, 选择器, 选择器") //交集选择器</p>
+		<p>$("选择器  +~>  选择器") //层次选择器</p>
+		<p>.child("ul") //对象元素中为ul的对象</p>
+		<p>.li[index=10] //对象li元素中index属性为10的</p>
+		<p>.odd //对象中索引为奇数的对象</p>
+		<p>.even //对象中索引为偶数的对象</p>
+		<p>.eq(2) //索引为2的对象</p>	
+		<p>.prer() //前一个元素 加All表示前面全部</p>
+		<p>.next() //后一个元素 加All表示后面全部</p>
+		<p>.siblings() //相邻所有</p>
+		<p>.find() //后代</p>
+		<p>.parent() //父级</p>
+		<p>$("p:last") //p元素最后一个</p>
+		<p>$("p:first") //p元素最前一个</p>
+		<p>$("input:selected") //selected为true</p>
+	</div>
+
+	<div>
+		<h3>事件绑定</h3>
+		<p>.bind({"事件":函数, "事件":函数}); //相同事件只执行一个</p>
+		<p>.delegate("p","事件",函数); //代理绑定包括未生成元素</p>
+		<p>.on("事件","p",函数); //代理绑定包括未生成元素</p>
+	</div>	
+	
+	<div>
+		<h3>事件解绑</h3>
+		<p>.bind()与click() ==> unbind("click 多个"); //无参表示所有</p>
+		<p>.delegate() ==> undelegate("p", "事件 多个"); //无参表示所有</p>
+		<p>.on() ==> off()</p>
+	</div>
+
+	<div>
+		<h3>off()</h3>
+		<p>off() //父级与子级所有事件</p>
+		<p>off("click 多个") //父级与子级多个事件</p>
+		<p>off("click 多个", "元素") //子级的多个事件</p>
+		<p>off("", "元素") //子级的多有事件</p>
+		<p>off("事件", "**") //所有子级的当前事件</p>
+	</div>
+
+	<div>
+		<h3>事件</h3>
+		<p>$() //页面加载</p>
+		<p>.click() //鼠标点击</p>
+		<p>.mouseenter() //鼠标进入</p>
+		<p>.mouseleave() //鼠标移出</p>	
+		<p>.scroll() //页面滚动</p>
+		<p>.mousemove() //鼠标移动</p>
+		<p>.on("transitonend", fn) //监听动画结束</p>
+	</div>
+
+	<div>
+		<h3>阻止事件冒泡</h3>
+		<p>function() {return flase;}</p>
+	</div>	
+
+	<div>
+		<h3>获取焦点</h3>
+		<p>文本框.focus() //点击文本框</p>
+		<p>文本框.trigger("focus"); //在别元素点击事件里 触发</p>
+		<p>文本框.triggerHandler("focus"); //无光标</p>
+	</div>
+
+	<div>
+		<h3>获取按键</h3>
+		<p>e.shiftKey() //shift+</p>
+		<p>e.ctrlKey() //ctrl+</p>
+		<p>e.alttKey() //alt+</p>
+		<p>e.keyCode() //按键值</p>
+	</div>
+
+	<div>
+		<h3>属性方法</h3>
+		<p>.length!=0 //判断此对象是否存在</p>
+		<p>.val() //获取或设置value或val(0)设置下拉selected为选中</p>	
+		<p>.text() .html() //标签或内文本</p>
+		<p>.index() //获取索引</p>
+		<p>.data() //索取数据</p>
+		<p>.each() //遍历元素组</p>
+		<p>.delay() //设置延迟</p>
+		<p>.attr("值"，"值") //添加自定义属性</p>
+		<p>.removeAttr("值") //移除自定义属性</p>
+		<p>prop("selected",true) //单个判断 多个设值</p>
+		<p>.width/higth(0) //获取宽高或设置</p>
+		<p>.offset().left; //获取距离包含外边距 设值:.offset({"left":"0"})</p>
+		<p>.scrollTop/四边() //卷曲出去的距离</p>
+		<p>.scrollwidth/higth() //元素内容实际宽高</p>
+		<p>.innerWidth/Heigth() //元素宽高只包括内边距</p>
+		<p>.outerWidth/Heigth(/true) //元素宽高只包括内边距和边框 true==外边距</p>
+	</div>
+
+	<div>
+		<h3>事件与对象</h3>
+		<p>e.target //触发该事件的对象</p>
+		<p>e.currentTarget //触发该事件的父级对象</p>
+		<p>e.delegateTarget //触发该事件的代理对象</p>
+	</div>
+
+	<div>
+		<h3>杂项</h3>
+		<p>//链式编程 点点点</p>
+		<p>end() //修复断链</p>
+		<p>//正则表达式 /^[abc]{2,6}$/.test()</p>
+	</div>
+	
+	<div>
+		<h3>样式</h3>
+		<p>.css() //css样式</p>
+		<p>.css("属性","值")</p>
+		<p>.css("属性","值").css("属性","值")</p>
+		<p>.css({"":"","":""})</p>
+		<p>.hasClass("类样式") //判断是否应用此样式</p>
+		<p>.addClass() //应用样式</p>
+		<p>.removeClass() //移除样式</p>
+		<p>.toggleclass() //三种集合</p>
+	</div>
+
+	<div>
+		<h3>动画类</h3>
+		<p>.show() //显示</p>
+		<p>.hide() //隐藏</p>
+		<p>.toggle() //前两种集合</p>
+		<p>.slideDown() //滑出</p>
+		<p>.slideup() //滑入</p>
+		<p>.slideToggle() //前两种集合</p>
+		<p>.fadeIn() //淡出</p>
+		<p>.fadeout() //淡入</p>
+		<p>.fadeToggle() //前两种集合</p>
+		<p>.fadeTo(毫秒值, 透明度) //透明度</p>
+		<p>.stop() //等待上一个函数结束再执行下一个函数</p>
+		<p>//快fast 慢slow 正常norml</p>
+		<p>.animate(css键值对, 毫秒, 回调函数); //动画函数</p>
+	</div>
+
+	<div>
+		<h3>元素创建与移除</h3>
+		<p>$("div").append(元素); //</p>
+		<p>元素.appendTo($("div")); //</p>
+		<p>元素.before(元素); //在此元素前面创建一个兄弟元素</p>
+		<p>元素.after(元素); //在此元素后面创建一个兄弟元素</p>
+		<p>$("div").done(); //克隆</p>
+		<p>对象.empty(元素); //移除元素</p>
+		<p>对象.remove(元素); //移除元素包括自己</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿{{}}
+
+v-tes
+t
+v-html
+
+v-if else
+
+v-show
+
+v-for
+v-bind :
+
+v-on @
+
+v-model
+
+methods
+
+componet
+
+tempalte
+
+filters
+watch
+deep
+{newV,oldV}
+
+slot
+
+
+
+组件创建之前 beforeCreate
+
+组件创建之后 created
+
+挂载数据到DOM之前 beforeMount
+
+挂载数据到DOM之后 mounted
+
+更新DOM之前 beforeUpdate
+
+更新DOM之后  updaed
+
+组件销毁之前 beforeDestroy
+
+组件销毁之后 destroy
+ 
+保存状态 <keep alive></keep alive>
+
+组件激活之前 activated
+
+组件激活之后 deactivated
+
+
+父传子
+
+porps
+
+
+子传父
+
+@
+this.$emit
+
+var 
+rou = new VueRouter({
+
+    router:[{
+      path:,
+      name:,
+      componet:
+      
+嵌套组件
+    }]]
+})
+
+命名组件 
+动态路由
+
+<router-link to=""></router-link>
+
+缓存组件
+元信息 next()
+

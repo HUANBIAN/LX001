@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        body ,div, h1, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            float: left;
+            /*		clear:both;*/
+            background-color: #ccc;
+            margin: 10px 5px;
+        }
+        h3 {
+            background-color: #333;
+            color: #fff;
+        }
+        h1, h3, p{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h3>语义化标签</h3>
+    <p>header //顶部</p>
+    <p>nav //导航</p>
+    <p>main/aside/alticle //主体/3/7</p>
+    <p>footer //底部</p>
+</div>
+<div>
+    <h3>多媒体标签</h3>
+    <p>audio //音频</p>
+    <p>vedio //视频</p>
+    <h3>多媒体属性</h3>
+    <p>controlls //控件</p>
+    <p>autopaly //自动播放</p>
+    <p>loop //循环播放</p>
+    <p>poster src=url //视频未播放时画面</p>
+    <p>source src=url type=/ //预备支持格式</p>
+</div>
+<div>
+    <h3>表单</h3>
+    <p>form/fieldset/legend //表单域/方框/标题</p>
+    <h3>表单标签</h3>
+    <p>progress //方格进度条(value max)</p>
+    <p>meter //强度进度条(min low value high max)</p>
+    <p>file //选择文件按按钮</p>
+    <p>submit //提交按钮</p>
+    <p>select //下拉菜单(选项:option value="")</p>
+    <p>label for="xx"//点击此标签相当于点击关联id="xx"的input</p>
+    <p>form="xx" //关联id为xx的form</p>
+    <p>datalist id="xx" //关联list="xx"的输入框(text)的下拉菜单</p>
+    <h3>type</h3>
+    <p>email //邮箱</p>
+    <p>tel //电话/数字键盘</p>
+    <p>url //网址格式</p>
+    <p>numder //随上下点击改变数值</p>
+    <p>search //带x的灰色提示</p>
+    <p>range //--|-- 左右滑动(min value max)</p>
+    <p>color //颜色</p>
+    <p>time //--:-- 时间格式</p>
+    <p>data //年/月/日 时间格式</p>
+    <p>data-local //年/月/日--:-- 时间格式</p>
+    <p>month //年/月 月份格式</p>
+    <p>veek //年/月/日/星期 星期格式</p>
+    <h3>表单属性</h3>
+    <p>placeholder //灰色不占位提示</p>
+    <p>autofocus //焦点</p>
+    <p>autocmplete(on/off) //输入下拉历史提示(前提:提交过/有name属性)</p>
+    <p>required //必须输入</p>
+    <p>pattern //正则表达式</p>
+    <p>multiple //多个/多文件,邮箱...</p>
+</div>
+
+
+
+</body>
+</html>
