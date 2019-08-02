@@ -18,7 +18,7 @@ Vue.use(MintUI);
 
 //导入mui
 import "./lib/mui/css/mui.min.css";
-import "./lib/mui/css/icons-extra.css";
+import './lib/mui/css/icons-extra.css'
 
 // 引入 axios
 import axios from 'axios';

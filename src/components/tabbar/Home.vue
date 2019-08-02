@@ -55,12 +55,6 @@ export default {
           console.log(err);
         });
     }
-    // handleClick(){
-    //   Toast({
-    //      message:'加载失败！',
-    //      duration: 1000
-    //   })
-    // }
   }
 };
 </script>
