@@ -1,6 +1,0 @@
-console。log( typeof 变量名 );  //输出变量名类型
-isNaN( 变量名 ); //不是数字true
-parseFloat(); //转小数
-Number(); //转数字
-.ToString(); String();  //转字符串
-Boolean(); //
