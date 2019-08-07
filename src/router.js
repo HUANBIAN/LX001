@@ -7,6 +7,8 @@ import search from "./components/tabbar/Search.vue";
 import journalism from './components/News/JournalismComponent.vue'
 import newsDetail from './components/News/NewsDetail.vue'
 import tupianxiangqing from './components/News/Tupianxiangqing.vue'
+import zaixiangqing from './components/News/Zaixiangqing.vue'
+import gumai from './components/News/Goumai.vue'
 
 var router = new VueRouter({
     routes: [
@@ -17,7 +19,9 @@ var router = new VueRouter({
         { path: "/search", component: search },
         { path: '/home/Journalism', component: journalism },
         { path: '/home/NewsDetail/:id', component: newsDetail },
-        { path: "/home/Tupianxiangqing", component: tupianxiangqing }
+        { path: "/home/Tupianxiangqing", component: tupianxiangqing },
+        { path: '/home/Tupianxiangqing/Zaixiangqing', component: zaixiangqing },
+        { path: '/home/Goumai', component: gumai } 
     ],
     linkActiveClass: "mui-active"
 });

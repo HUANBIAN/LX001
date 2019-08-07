@@ -31,7 +31,7 @@ export default {
       pinglunneirong: [],
       pinglunneirongindex: 1,
       tucao: "",
-      id: 10
+      id: 9
     };
   },
   created() {

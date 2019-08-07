@@ -8,6 +8,9 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 import router from "./router.js";
+router.afterEach((to,from,next) => {
+  window.scrollTo(0,0);
+});
 
 import app from "./App.vue";
 
@@ -29,6 +32,20 @@ Vue.prototype.$axios = axios;
 
 //导入时间格式化插件
 import moment from 'moment'
+
+//缩略图插件
+import VuePreview from 'vue-preview'
+Vue.use(VuePreview)
+// Vue.use(preview, {
+//   mainClass: 'pswp--minimal--dark',
+//   barsSize: {top: 0, bottom: 0},
+//   captionEl: false,
+//   fullscreenEl: false,
+//   shareEl: false,
+//   bgOpacity: 0.85,
+//   tapToClose: true,
+//   tapToToggleControls: false
+// })
 
 import './css/index.scss'
 

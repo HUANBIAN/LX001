@@ -70,6 +70,11 @@ export default {
 .mui-grid-view.mui-grid-9 {
   background-color: #fff;
   border: none;
+  // display: flex;
+  margin: 0 2px;
+  li{
+    width: 33%;
+  }
   img {
     width: 60px;
     height: 60px;

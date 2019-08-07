@@ -1,0 +1,84 @@
+{
+    "shoujiku":[
+        {
+            "src": "../images/u=928960185,3052760645&fm=26&gp=0.jpg",
+            "title":"型号",
+            "xianjia": 1999,
+            "jiujia": 2500,
+            "zhuangtai": "热卖中",
+            "kucun": 233
+        },
+        {
+            "src": "../images/u=1420372755,700102725&fm=26&gp=0.jpg",
+            "title":"型号",
+            "xianjia": 1999,
+            "jiujia": 2500,
+            "zhuangtai": "热卖中",
+            "kucun": 233
+        },
+        {
+            "src": "../images/u=2027875965,236243718&fm=15&gp=0.jpg",
+            "title":"型号",
+            "xianjia": 1999,
+            "jiujia": 2500,
+            "zhuangtai": "热卖中",
+            "kucun": 233
+        },
+        {
+            "src": "../images/u=2215164833,1067420792&fm=15&gp=0.jpg",
+            "title":"型号",
+            "xianjia": 1999,
+            "jiujia": 2500,
+            "zhuangtai": "热卖中",
+            "kucun": 233
+        },
+        {
+            "src": "../images/u=2363200155,3285270587&fm=26&gp=0.jpg",
+            "title":"型号",
+            "xianjia": 1999,
+            "jiujia": 2500,
+            "zhuangtai": "热卖中",
+            "kucun": 233
+        },
+        {
+            "src": "../images/u=2770715482,4269087695&fm=26&gp=0.jpg",
+            "title":"型号",
+            "xianjia": 1999,
+            "jiujia": 2500,
+            "zhuangtai": "热卖中",
+            "kucun": 233
+        },
+        {
+            "src": "../images/u=2858791191,3496723071&fm=26&gp=0.jpg",
+            "title":"型号",
+            "xianjia": 1999,
+            "jiujia": 2500,
+            "zhuangtai": "热卖中",
+            "kucun": 233
+        },
+        {
+            "src": "../images/u=3482120887,71107418&fm=15&gp=0.jpg",
+            "title":"型号",
+            "xianjia": 1999,
+            "jiujia": 2500,
+            "zhuangtai": "热卖中",
+            "kucun": 233
+        },
+        {
+            "src": "../images/u=3979810325,2169000301&fm=15&gp=0.jpg",
+            "title":"型号",
+            "xianjia": 1999,
+            "jiujia": 2500,
+            "zhuangtai": "热卖中",
+            "kucun": 233
+        },
+        {
+            "src": "../images/u=4131189137,1474982922&fm=15&gp=0.jpg",
+            "title":"型号",
+            "xianjia": 1999,
+            "jiujia": 2500,
+            "zhuangtai": "热卖中",
+            "kucun": 233
+        }
+    ]
+}
