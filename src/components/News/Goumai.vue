@@ -11,7 +11,7 @@
         </p>
         <p class="kuquan">
           <span>{{item.zhuangtai}}</span>
-          <span>{{item.kucun}}</span>
+          <span>库存:{{item.kucun}}</span>
         </p>
       </div>
     </div>
