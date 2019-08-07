@@ -1,10 +1,6 @@
 <template>
   <div>
-    <mt-swipe :auto="4000">
-      <mt-swipe-item v-for="item in lunbotuList" :key="item.id">
-        <img :src="item.src" alt />
-      </mt-swipe-item>
-    </mt-swipe>
+    <lunbo :lunbotuList="lunbotuList"></lunbo>
 
     <ul class="mui-table-view mui-grid-view mui-grid-9">
       <li
@@ -23,6 +19,7 @@
 
 <script>
 import { Toast } from "mint-ui";
+import lunbo from '../quanjuzujian/Lunbo.vue'
 
 export default {
   data() {
@@ -30,6 +27,9 @@ export default {
       lunbotuList: [],
       xinwentt: []
     };
+  },
+  components:{
+    lunbo
   },
   created() {
     this.getluobotu(), this.getxinwentt();
@@ -60,13 +60,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.mint-swipe {
-  height: 200px;
-  img {
-    height: 100%;
-    width: 100%;
-  }
-}
+
 .mui-grid-view.mui-grid-9 {
   background-color: #fff;
   border: none;

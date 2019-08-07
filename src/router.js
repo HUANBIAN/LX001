@@ -9,6 +9,7 @@ import newsDetail from './components/News/NewsDetail.vue'
 import tupianxiangqing from './components/News/Tupianxiangqing.vue'
 import zaixiangqing from './components/News/Zaixiangqing.vue'
 import gumai from './components/News/Goumai.vue'
+import goumaixiaingqing from './components/News/Goumaixiangqing.vue'
 
 var router = new VueRouter({
     routes: [
@@ -21,7 +22,8 @@ var router = new VueRouter({
         { path: '/home/NewsDetail/:id', component: newsDetail },
         { path: "/home/Tupianxiangqing", component: tupianxiangqing },
         { path: '/home/Tupianxiangqing/Zaixiangqing', component: zaixiangqing },
-        { path: '/home/Goumai', component: gumai } 
+        { path: '/home/Goumai', component: gumai },
+        { path: '/home/Goumai/Goumaixiangqing', component: goumaixiaingqing }  
     ],
     linkActiveClass: "mui-active"
 });
