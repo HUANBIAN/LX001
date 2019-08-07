@@ -1,6 +1,6 @@
 <template>
   <div>
-    <lunbo :lunbotuList="lunbotuList"></lunbo>
+    <lunbo :lunbotuList="lunbotuList" :isshiying="true"></lunbo>
 
     <ul class="mui-table-view mui-grid-view mui-grid-9">
       <li

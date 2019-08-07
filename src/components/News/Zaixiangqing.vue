@@ -20,43 +20,47 @@ export default {
       slide1: [
         {
           src:
-            "https://farm6.staticflickr.com/5591/15008867125_68a8ed88cc_b.jpg",
+          "../../images/fab31b151b539ba82150d872b6a381f5.jpg",
+           
           msrc:
-            "https://farm6.staticflickr.com/5591/15008867125_68a8ed88cc_m.jpg",
+             "../../images/0807225523.PNG",
           alt: "picture1",
           title: "Image Caption 1",
-          w: 800,
-          h: 600
+          w: 1200,
+          h: 800
         },
         {
           src:
-            "https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_b.jpg",
+           "../../images/59a3aa12ebc76.jpg",
+            
           msrc:
-            "https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_m.jpg",
+           "../../images/0807225426.PNG",
           alt: "picture2",
           title: "Image Caption 2",
-           w: 800,
-          h: 600
+           w: 1200,
+          h: 800
         },
         {
           src:
-            "https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_b.jpg",
+          "../../images/59e41690c3794.jpg",
+           
           msrc:
-            "https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_m.jpg",
+             "../../images/0807225453.PNG",
           alt: "picture2",
-          title: "Image Caption 2",
-           w: 800,
-          h: 600
+          title: "Image Caption 3",
+           w: 1200,
+          h: 800
         },
         {
           src:
-            "https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_b.jpg",
+          "../../images/5a6c1c841bac4.jpg",
+           
           msrc:
-            "https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_m.jpg",
+            "../../images/0807225315.PNG",
           alt: "picture2",
-          title: "Image Caption 2",
-           w: 800,
-          h: 600
+          title: "Image Caption 4",
+           w: 1200,
+          h: 800
         }
       ]
     };

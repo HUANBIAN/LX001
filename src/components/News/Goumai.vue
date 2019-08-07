@@ -5,9 +5,10 @@
       <img :src="item.src" alt />
       <h1>{{item.title}}</h1>
       <div>
+        
         <p class="jiage">
-          <span>{{item.xianjia}}</span>
-          <span>{{item.jiujia}}</span>
+          <span>￥{{item.xianjia}}</span>
+          <span>￥{{item.jiujia}}</span>
         </p>
         <p class="kuquan">
           <span>{{item.zhuangtai}}</span>
@@ -57,11 +58,11 @@ export default {
     width: 49%;
     border: 1px #ccc solid;
     box-shadow: 0 0 8px #ccc;
-    margin: 4px 0;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 260px;
+    min-height: 231px;
     p {
       margin: 0;
       padding: 0;
