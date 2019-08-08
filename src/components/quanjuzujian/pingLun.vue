@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <br />
-    <br />
+  <div class="neirong">
     <h4>用户评论</h4>
     <hr />
     <div class="mui-input-row" style="margin: 10px 5px;">
@@ -77,6 +75,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.neirong{
+  padding: 2px;
+}
 select,
 textarea {
   font-size: 14px;

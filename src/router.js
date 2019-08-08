@@ -10,6 +10,8 @@ import tupianxiangqing from './components/News/Tupianxiangqing.vue'
 import zaixiangqing from './components/News/Zaixiangqing.vue'
 import gumai from './components/News/Goumai.vue'
 import goumaixiaingqing from './components/News/Goumaixiangqing.vue'
+import tuwenjieshao from './components/News/Tuwenjieshao.vue'
+import pinglun from './components/quanjuzujian/pingLun.vue'
 
 var router = new VueRouter({
     routes: [
@@ -23,7 +25,9 @@ var router = new VueRouter({
         { path: "/home/Tupianxiangqing", component: tupianxiangqing },
         { path: '/home/Tupianxiangqing/Zaixiangqing', component: zaixiangqing },
         { path: '/home/Goumai', component: gumai },
-        { path: '/home/Goumai/Goumaixiangqing', component: goumaixiaingqing }  
+        { path: '/home/Goumai/Goumaixiangqing', component: goumaixiaingqing },
+        { path: '/home/Goumai/Goumaixiangqing/tuwenjieshao', component: tuwenjieshao },
+        { path: '/home/Goumai/Goumaixiangqing/pinglun', component: pinglun, name: 'pinglun'}
     ],
     linkActiveClass: "mui-active"
 });
