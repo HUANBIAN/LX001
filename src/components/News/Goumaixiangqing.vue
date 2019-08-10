@@ -11,15 +11,15 @@
       <lunbo :lunbotuList="lunbolist" :isshiying="false"></lunbo>
     </div>
     <div class="mui-card">
-      <div class="mui-card-header">{{shangpingxiangqing.xinghao}}</div>
+      <div class="mui-card-header">{{shangpingxiangqing.title}}</div>
       <div class="mui-card-content">
         <div class="mui-card-content-inner">
           <p>
             市场价:
-            <del>￥{{shangpingxiangqing.shichangjiang}}</del>
+            <del>￥{{shangpingxiangqing.xianjia}}</del>
             &nbsp;&nbsp;&nbsp;&nbsp;
             销售价:
-            <span>￥{{shangpingxiangqing.xiaoshoujia}}</span>
+            <span>￥{{shangpingxiangqing.jiujia}}</span>
           </p>
           <p>
             购买数量:
@@ -41,7 +41,7 @@
       </div>
       <div class="mui-card-footer">
         <router-link
-          to="/home/Goumai/Goumaixiangqing/tuwenjieshao"
+          :to="'/home/Goumai/Goumaixiangqing/tuwenjieshao/'+$route.params.id"
           tag="button"
           type="button"
           class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined"
@@ -49,7 +49,7 @@
         <button
           type="button"
           class="mui-btn mui-btn-warning mui-btn-block mui-btn-outlined"
-          @click="gopinglun"
+          @click="gopinglun($route.params.id)"
         >商品评论</button>
       </div>
     </div>
@@ -63,6 +63,7 @@ import jianshuqi from "../quanjuzujian/jianshuqi.vue";
 export default {
   data() {
     return {
+      id: this.$route.params.id,
       lunbolist: [],
       shangpingxiangqing: {},
       isshow: false,
@@ -70,32 +71,41 @@ export default {
     };
   },
   created() {
-    this.getlunbo();
+    // this.getlunbo();
     this.getshangpingxiangqing();
   },
   methods: {
-    getlunbo() {
-      this.$axios
-        .get("shoujisuolue.json")
-        .then(res => {
-          this.lunbolist = res.data.luoboobj;
-        })
-        .catch(err => {
-          console.log(err);
-        });
-    },
+    // getlunbo() {
+    //   this.$axios
+    //     .get("shoujisuolue.json")
+    //     .then(res => {
+    //       this.lunbolist = res.data.luoboobj;
+    //       console.log(this.id, this.lunbolist)
+    //     })
+    //     .catch(err => {
+    //       console.log(err);
+    //     });
+    // },
     getshangpingxiangqing() {
       this.$axios
-        .get("shangpingxiangqing.json")
+        .get("shoujiku.json")
         .then(res => {
-          this.shangpingxiangqing = res.data.spxq;
+          this.shangpingxiangqing = res.data.shoujiku;
+          for (const iterator of this.shangpingxiangqing) {
+            // console.log(iterator.id)
+            if(parseInt(this.id) == iterator.id){
+              this.shangpingxiangqing = iterator
+              this.lunbolist = iterator.suoluetu
+              return
+            }
+          }
         })
         .catch(err => {
           console.log(err);
         });
     },
-    gopinglun() {
-      this.$router.push("/home/Goumai/Goumaixiangqing/pinglun");
+    gopinglun(id) {
+      this.$router.push({name:'pinglun', params:{id}});
     },
     jiarugouwuchedonghua() {
       this.isshow = !this.isshow;

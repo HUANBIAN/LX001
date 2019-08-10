@@ -1,84 +1,264 @@
 {
     "shoujiku":[
         {
+            "id":0,
             "src": "../images/u=928960185,3052760645&fm=26&gp=0.jpg",
-            "title":"型号",
-            "xianjia": 1999,
-            "jiujia": 2500,
+            "title":"型号7256",
+            "xianjia": 62548,
+            "jiujia": 6768,
             "zhuangtai": "热卖中",
-            "kucun": 233
+            "kucun": 584,
+            "suoluetu":[
+                {
+                    "id": 0,
+                    "src": "../images/u=3429483789,3658867096&fm=11&gp=0.jpg"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/gsgsgg.jpg"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/ywye5y.jpg"
+                }
+            ],
+            "bianhao":"9527163",
+            "sahngjiashijian":"2019-08-08"
+        
         },
         {
+            "id":1,
             "src": "../images/u=1420372755,700102725&fm=26&gp=0.jpg",
-            "title":"型号",
-            "xianjia": 1999,
-            "jiujia": 2500,
+            "title":"型号6846",
+            "xianjia": 4865,
+            "jiujia": 7868,
             "zhuangtai": "热卖中",
-            "kucun": 233
+            "kucun": 315,
+            "suoluetu":[
+                {
+                    "id": 0,
+                    "src": "../images/u=3429483789,3658867096&fm=11&gp=0.jpg"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/gsgsgg.jpg"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/ywye5y.jpg"
+                }
+            ],
+            "bianhao":"9527163",
+            "sahngjiashijian":"2019-08-08"
+        
         },
         {
+            "id":2,
             "src": "../images/u=2027875965,236243718&fm=15&gp=0.jpg",
-            "title":"型号",
-            "xianjia": 1999,
-            "jiujia": 2500,
+            "title":"型号5784",
+            "xianjia": 5896,
+            "jiujia": 1125,
             "zhuangtai": "热卖中",
-            "kucun": 233
+            "kucun": 778,
+            "suoluetu":[
+                {
+                    "id": 0,
+                    "src": "../images/u=3429483789,3658867096&fm=11&gp=0.jpg"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/gsgsgg.jpg"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/ywye5y.jpg"
+                }
+            ],
+            "bianhao":"9527163",
+            "sahngjiashijian":"2019-08-08"
+        
         },
         {
+            "id":3,
             "src": "../images/u=2215164833,1067420792&fm=15&gp=0.jpg",
-            "title":"型号",
-            "xianjia": 1999,
-            "jiujia": 2500,
+            "title":"型号4685",
+            "xianjia": 5686,
+            "jiujia": 6485,
             "zhuangtai": "热卖中",
-            "kucun": 233
+            "kucun": 4521,
+            "suoluetu":[
+                {
+                    "id": 0,
+                    "src": "../images/u=3429483789,3658867096&fm=11&gp=0.jpg"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/gsgsgg.jpg"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/ywye5y.jpg"
+                }
+            ],
+            "bianhao":"9527163",
+            "sahngjiashijian":"2019-08-08"
+        
         },
         {
+            "id":4,
             "src": "../images/u=2363200155,3285270587&fm=26&gp=0.jpg",
-            "title":"型号",
-            "xianjia": 1999,
+            "title":"型号8648",
+            "xianjia": 3154,
             "jiujia": 2500,
             "zhuangtai": "热卖中",
-            "kucun": 233
+            "kucun": 138,
+            "suoluetu":[
+                {
+                    "id": 0,
+                    "src": "../images/u=3429483789,3658867096&fm=11&gp=0.jpg"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/gsgsgg.jpg"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/ywye5y.jpg"
+                }
+            ],
+            "bianhao":"9527163",
+            "sahngjiashijian":"2019-08-08"
+        
         },
         {
+            "id":5,
             "src": "../images/u=2770715482,4269087695&fm=26&gp=0.jpg",
-            "title":"型号",
-            "xianjia": 1999,
+            "title":"型号6478",
+            "xianjia": 4686,
             "jiujia": 2500,
             "zhuangtai": "热卖中",
-            "kucun": 233
+            "kucun": 688,
+            "suoluetu":[
+                {
+                    "id": 0,
+                    "src": "../images/u=3429483789,3658867096&fm=11&gp=0.jpg"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/gsgsgg.jpg"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/ywye5y.jpg"
+                }
+            ],
+            "bianhao":"9527163",
+            "sahngjiashijian":"2019-08-08"
+        
         },
         {
+            "id":6,
             "src": "../images/u=2858791191,3496723071&fm=26&gp=0.jpg",
-            "title":"型号",
-            "xianjia": 1999,
-            "jiujia": 2500,
+            "title":"型号6783",
+            "xianjia": 1112,
+            "jiujia": 8774,
             "zhuangtai": "热卖中",
-            "kucun": 233
+            "kucun": 549,
+            "suoluetu":[
+                {
+                    "id": 0,
+                    "src": "../images/u=3429483789,3658867096&fm=11&gp=0.jpg"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/gsgsgg.jpg"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/ywye5y.jpg"
+                }
+            ],
+            "bianhao":"9527163",
+            "sahngjiashijian":"2019-08-08"
+        
         },
         {
+            "id":7,
             "src": "../images/u=3482120887,71107418&fm=15&gp=0.jpg",
-            "title":"型号",
-            "xianjia": 1999,
-            "jiujia": 2500,
+            "title":"型号6874",
+            "xianjia": 7846,
+            "jiujia": 7814,
             "zhuangtai": "热卖中",
-            "kucun": 233
+            "kucun": 425,
+            "suoluetu":[
+                {
+                    "id": 0,
+                    "src": "../images/u=3429483789,3658867096&fm=11&gp=0.jpg"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/gsgsgg.jpg"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/ywye5y.jpg"
+                }
+            ],
+            "bianhao":"9527163",
+            "sahngjiashijian":"2019-08-08"
+        
         },
         {
+            "id":8,
             "src": "../images/u=3979810325,2169000301&fm=15&gp=0.jpg",
-            "title":"型号",
-            "xianjia": 1999,
-            "jiujia": 2500,
+            "title":"型号3647",
+            "xianjia": 6124,
+            "jiujia": 3654,
             "zhuangtai": "热卖中",
-            "kucun": 233
+            "kucun": 187,
+            "suoluetu":[
+                {
+                    "id": 0,
+                    "src": "../images/u=3429483789,3658867096&fm=11&gp=0.jpg"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/gsgsgg.jpg"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/ywye5y.jpg"
+                }
+            ],
+            "bianhao":"9527163",
+            "sahngjiashijian":"2019-08-08"
+        
         },
         {
+            "id":9,
             "src": "../images/u=4131189137,1474982922&fm=15&gp=0.jpg",
-            "title":"型号",
-            "xianjia": 1999,
-            "jiujia": 2500,
+            "title":"型号7781",
+            "xianjia": 6874,
+            "jiujia": 2197,
             "zhuangtai": "热卖中",
-            "kucun": 233
+            "kucun": 753,
+            "suoluetu":[
+                {
+                    "id": 0,
+                    "src": "../images/u=3429483789,3658867096&fm=11&gp=0.jpg"
+                },
+                {
+                    "id": 1,
+                    "src": "../images/gsgsgg.jpg"
+                },
+                {
+                    "id": 2,
+                    "src": "../images/ywye5y.jpg"
+                }
+            ],
+            "bianhao":"9527163",
+            "sahngjiashijian":"2019-08-08"
+        
         }
     ]
 }

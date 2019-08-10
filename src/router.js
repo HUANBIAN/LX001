@@ -25,9 +25,9 @@ var router = new VueRouter({
         { path: "/home/Tupianxiangqing", component: tupianxiangqing },
         { path: '/home/Tupianxiangqing/Zaixiangqing', component: zaixiangqing },
         { path: '/home/Goumai', component: gumai },
-        { path: '/home/Goumai/Goumaixiangqing', component: goumaixiaingqing },
-        { path: '/home/Goumai/Goumaixiangqing/tuwenjieshao', component: tuwenjieshao },
-        { path: '/home/Goumai/Goumaixiangqing/pinglun', component: pinglun, name: 'pinglun'}
+        { path: '/home/Goumai/Goumaixiangqing/:id', component: goumaixiaingqing, name:'gmxq' },
+        { path: '/home/Goumai/Goumaixiangqing/tuwenjieshao/:id', component: tuwenjieshao },
+        { path: '/home/Goumai/Goumaixiangqing/pinglun/:id', component: pinglun, name: 'pinglun'}
     ],
     linkActiveClass: "mui-active"
 });

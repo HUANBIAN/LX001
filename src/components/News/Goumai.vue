@@ -1,7 +1,7 @@
 <template>
   <div class="shangping-list">
 
-    <div class="shangping" v-for="item in shoujikulist" :key="item.src" @click="tiaozhaung">
+    <div class="shangping" v-for="item in shoujikulist" :key="item.id" @click="tiaozhaung(item.id)">
       <img :src="item.src" alt />
       <h1>{{item.title}}</h1>
       <div>
@@ -41,8 +41,8 @@ export default {
         console.log(err)
       })
     },
-    tiaozhaung(){
-      this.$router.push('/home/Goumai/Goumaixiangqing')
+    tiaozhaung(id){
+      this.$router.push({name: 'gmxq', params:{id}})
     }
   }
 };
