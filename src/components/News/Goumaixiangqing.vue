@@ -16,10 +16,10 @@
         <div class="mui-card-content-inner">
           <p>
             市场价:
-            <del>￥{{shangpingxiangqing.xianjia}}</del>
+            <del>￥{{shangpingxiangqing.jiujia}}</del>
             &nbsp;&nbsp;&nbsp;&nbsp;
             销售价:
-            <span>￥{{shangpingxiangqing.jiujia}}</span>
+            <span>￥{{shangpingxiangqing.xianjia}}</span>
           </p>
           <p>
             购买数量:
@@ -111,7 +111,9 @@ export default {
       this.isshow = !this.isshow;
       let spobj = {
         id: parseInt(this.id),
-        shuliang: this.goumaishuliang
+        shuliang: this.goumaishuliang,
+        zhuangtai: true,
+        danjia: this.shangpingxiangqing.xianjia
       }
       this.$store.commit('getsl',spobj)
     },

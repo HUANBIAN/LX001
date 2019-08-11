@@ -15,13 +15,17 @@ router.afterEach((to,from,next) => {
 import Vuex from 'vuex'
 Vue.use(Vuex)
 
+
+let splist = JSON.parse(localStorage.getItem('splist' || ''))
+
+
+
 const store = new Vuex.Store({
   state: {
-    splist:[]
+    splist
   },
   mutations: {
     getsl(state,spobj){
-      // console.log(spobj)
       let flage = false
       for (const item of state.splist) {
         if(item.id == spobj.id){
@@ -34,6 +38,37 @@ const store = new Vuex.Store({
       if(!flage){
         state.splist.push(spobj)
       }
+
+      localStorage.setItem('splist',JSON.stringify(state.splist))
+    },
+    zengshanshulinag(state, obj){
+      for (const item of state.splist) {
+          if(item.id == obj.id){
+            // console.log(obj.shuliang)
+            item.shuliang = parseInt(obj.shuliang)
+            break;
+          }
+      }
+      localStorage.setItem('splist',JSON.stringify(state.splist))
+    },
+    shanchusp(state, id){
+      // console.log(state.splist)
+      state.splist.some((item, i) => {
+        if(item.id == id){
+          state.splist.splice(i, 1)
+          return true
+        }
+      })
+      localStorage.setItem('splist',JSON.stringify(state.splist))
+    },
+    zhuangtai(state, obj){
+      for (const iterator of state.splist) {
+        if(iterator.id == obj.id){
+          iterator.zhuangtai = obj.zhuangtai
+          break;
+        }
+      }
+      localStorage.setItem('splist',JSON.stringify(state.splist))
     }
   },
   getters: {
@@ -43,6 +78,30 @@ const store = new Vuex.Store({
         sl += item.shuliang
       }
       return sl
+    },
+    getsplit(state){
+      return state.splist
+    },
+    getzhuangtai(state){
+      let zhuangtailist = {}
+      for (const iterator of state.splist) {
+        zhuangtailist[iterator.id] = iterator.zhuangtai
+      }
+      return zhuangtailist
+    },
+    getgoumaixq(state){
+      let gm = {
+       shuliang : 0,
+       zongjiang : 0
+      }
+      
+      for (const iterator of state.splist) {
+        if(iterator.zhuangtai){
+          gm.shuliang += iterator.shuliang
+          gm.zongjiang += iterator.shuliang * iterator.danjia
+        }
+      }
+      return gm
     }
   }
 })
