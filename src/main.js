@@ -12,6 +12,41 @@ router.afterEach((to,from,next) => {
   window.scrollTo(0,0);
 });
 
+import Vuex from 'vuex'
+Vue.use(Vuex)
+
+const store = new Vuex.Store({
+  state: {
+    splist:[]
+  },
+  mutations: {
+    getsl(state,spobj){
+      // console.log(spobj)
+      let flage = false
+      for (const item of state.splist) {
+        if(item.id == spobj.id){
+          item.shuliang += spobj.shuliang
+          flage = true
+          return
+        }
+      }
+
+      if(!flage){
+        state.splist.push(spobj)
+      }
+    }
+  },
+  getters: {
+    getsl(state){
+      let sl = 0
+      for (const item of state.splist) {
+        sl += item.shuliang
+      }
+      return sl
+    }
+  }
+})
+
 import app from "./App.vue";
 
 // 导入mint-mi
@@ -57,5 +92,6 @@ Vue.filter('dateFormat', function(datastr, pattern = "YYYY-MM-DD HH:mm:ss"){
 var vm = new Vue({
   el: "#app",
   render: c => c(app),
-  router
+  router,
+  store
 })

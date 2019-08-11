@@ -109,6 +109,11 @@ export default {
     },
     jiarugouwuchedonghua() {
       this.isshow = !this.isshow;
+      let spobj = {
+        id: parseInt(this.id),
+        shuliang: this.goumaishuliang
+      }
+      this.$store.commit('getsl',spobj)
     },
     beforeEnter(el){
         el.style.transform = 'translate(0, 0)'
