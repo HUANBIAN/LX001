@@ -15,7 +15,7 @@ import pinglun from './components/quanjuzujian/pingLun.vue'
 
 var router = new VueRouter({
     routes: [
-        { path: "/", redirect: './home' },
+        { path: "/", redirect: '/home' },
         { path: "/home", component: home },
         { path: "/member", component: member },
         { path: "/shopping", component: shopping },

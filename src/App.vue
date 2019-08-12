@@ -1,14 +1,14 @@
 <template>
   <div class="content">
-    <!-- <header id="header" class="mui-bar mui-bar-nav">
-      <h1 class="mui-title">项目001</h1>
+    <!-- :class="{heifalese:sf}" -->
+    <header id="header" class="mui-bar mui-bar-nav" v-show="daohanglantf">
       <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-    </header> -->
+       <!-- @click="fanhuin" -->
+    </header>
 
     <transition>
       <router-view></router-view>
     </transition>
-
 
     <nav class="mui-bar mui-bar-tab">
       <router-link class="mui-tab-item-fb" to="/home">
@@ -35,57 +35,98 @@
 
 <script>
 export default {
+  data() {
+    return {
+      daohanglantf: false,
+      sf: false
+    };
+  },
+  created(){
 
-}
+  },
+  // watch: {
+  //   $route(to) {
+  //     let dizhilist = ["/home", "/member", "/shopping", "/search"];
+
+  //     for (const iterator of dizhilist) {
+  //       if (to.path == iterator) {
+  //         console.log(`${to.path}当前地址等于列表中的一项`);
+  //         this.daohanglantf = false;
+  //         this.sf = false;
+  //         break;
+  //       }
+  //       if (to.path != iterator) {
+  //         console.log(`${to.path}当前地址不等于列表中的一项`);
+  //         this.daohanglantf = true;
+  //         this.sf = true;
+  //       }
+  //     }
+  //   }
+  // },
+  // methods: {
+  //   fanhuin() {
+  //     this.$router.go(-1)
+  //   }
+  // }
+};
 </script>
 
 <style lang="scss" scoped>
 .content {
-  // margin-top: 44px;
   overflow: hidden;
   margin-bottom: 50px;
 }
+// .heifalese {
+//   margin-top: 34px;
+// }
 // .mui-active {
 //   background-color: #999;
 // }
-.v-enter{
-    opacity: 0;
+.v-enter {
+  opacity: 0;
   transform: translateX(100%);
 }
-.v-leave-to{
+.v-leave-to {
   opacity: 0;
   transform: translateX(-100%);
   position: absolute;
 }
 
 .v-enter-active,
-.v-leave-active{
+.v-leave-active {
   transition: all 0.5s ease;
 }
 
 .mui-bar-tab .mui-tab-item-fb {
-    display: table-cell;
-    overflow: hidden;
-    width: 1%;
-    height: 50px;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color: #929292;
+  display: table-cell;
+  overflow: hidden;
+  width: 1%;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #929292;
 }
 .mui-bar-tab .mui-tab-item-fb .mui-icon {
-    top: 3px;
-    width: 24px;
-    height: 24px;
-    padding-top: 0;
-    padding-bottom: 0;
+  top: 3px;
+  width: 24px;
+  height: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-.mui-bar-tab .mui-tab-item-fb .mui-icon~.mui-tab-label {
-    font-size: 11px;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.mui-bar-tab .mui-tab-item-fb .mui-icon ~ .mui-tab-label {
+  font-size: 11px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mui-bar {
+  height: 34px;
+}
+.mui-bar .mui-icon {
+  font-size: 14px;
+  /* padding-bottom: 10px; */
 }
 </style>
 
