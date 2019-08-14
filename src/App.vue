@@ -1,8 +1,9 @@
 <template>
   <div class="content">
-    <!-- :class="{heifalese:sf}" -->
-    <header id="header" class="mui-bar mui-bar-nav" v-show="daohanglantf">
-      <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    
+    <header id="header" class="mui-bar mui-bar-nav" >
+      <h1 class="mui-title">project002</h1>
+      <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" v-show="daohanglantf"></a>
        <!-- @click="fanhuin" -->
     </header>
 
@@ -38,31 +39,31 @@ export default {
   data() {
     return {
       daohanglantf: false,
-      sf: false
+  
     };
   },
   created(){
 
   },
-  // watch: {
-  //   $route(to) {
-  //     let dizhilist = ["/home", "/member", "/shopping", "/search"];
+  watch: {
+    $route(to) {
+      let dizhilist = ["/home", "/member", "/shopping", "/search"];
 
-  //     for (const iterator of dizhilist) {
-  //       if (to.path == iterator) {
-  //         console.log(`${to.path}当前地址等于列表中的一项`);
-  //         this.daohanglantf = false;
-  //         this.sf = false;
-  //         break;
-  //       }
-  //       if (to.path != iterator) {
-  //         console.log(`${to.path}当前地址不等于列表中的一项`);
-  //         this.daohanglantf = true;
-  //         this.sf = true;
-  //       }
-  //     }
-  //   }
-  // },
+      for (const iterator of dizhilist) {
+        if (to.path == iterator) {
+          console.log(`${to.path}当前地址等于列表中的一项`);
+          this.daohanglantf = false;
+     
+          break;
+        }
+        if (to.path != iterator) {
+          console.log(`${to.path}当前地址不等于列表中的一项`);
+          this.daohanglantf = true;
+      
+        }
+      }
+    }
+  },
   // methods: {
   //   fanhuin() {
   //     this.$router.go(-1)
@@ -75,10 +76,8 @@ export default {
 .content {
   overflow: hidden;
   margin-bottom: 50px;
+   margin-top: 34px;
 }
-// .heifalese {
-//   margin-top: 34px;
-// }
 // .mui-active {
 //   background-color: #999;
 // }
@@ -127,6 +126,9 @@ export default {
 .mui-bar .mui-icon {
   font-size: 14px;
   /* padding-bottom: 10px; */
+}
+.mui-title {
+    line-height: 34px;
 }
 </style>
 
